@@ -1,6 +1,6 @@
 ---
 title: "Family Tree Mapper"
-excerpt: "A tool for visualizing ambiguous geodata from family tree (GEDCOM) data."
+excerpt: "A tool for visualizing ambiguous geodata from family trees."
 header:
   teaser: /assets/images/ft_map_wordy.png
 author_profile: true

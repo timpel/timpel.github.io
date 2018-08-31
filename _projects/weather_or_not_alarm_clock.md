@@ -1,6 +1,8 @@
 ---
 title: "WeatherOrNot Alarm Clock"
 excerpt: "Android alarm clock, customizeable based on weather conditions."
+header:
+  teaser: /assets/images/won_large.png
 author_profile: true
 classes: wide
 ---

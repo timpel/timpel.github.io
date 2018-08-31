@@ -138,11 +138,11 @@
 
   @include breakpoint($small) {
     float: left;
-    width: span(5 of 10);
+    width: span(7 of 16);
 
     &:nth-child(2n + 1) {
       clear: both;
-      margin-left: 0;
+      margin-left: gutter(of 10);
     }
 
     &:nth-child(2n + 2) {
@@ -152,14 +152,16 @@
   }
 
   @include breakpoint($medium) {
-    width: span(5 of 10);
+    width: span(7 of 16);
 
     &:nth-child(2n + 1) {
       clear: none;
+      margin-left: gutter(1 of 12);
     }
 
     &:nth-child(4n + 1) {
       clear: both;
+      margin-left: gutter(1 of 12);
     }
 
     &:nth-child(4n + 2) {
