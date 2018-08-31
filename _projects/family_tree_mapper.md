@@ -9,11 +9,12 @@ This was a 3-stage endeavour. Stage 1 was to write a parser to turn family tree 
 
 View the source code on [Github](https://github.com/timpel/family-tree-mapper/), and/or have a look at my own mapped family tree below:
 
-<div id="mapid" class="map leaflet-container" style="height: 600px; position:relative;">hihihi</div>
+<div id="mapid" class="map leaflet-container" style="height: 600px; position:relative;"></div>
 <style>
   {% include leaflet.css %}
   {% include MarkerCluster.css %}
   {% include MarkerCluster.Default.css %}
+  {% include leaflet-search.min.css %}
 </style>
 <script>
   {% include leaflet.js %}
