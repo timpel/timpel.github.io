@@ -109,6 +109,13 @@
    Grid view
    ========================================================================== */
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 .archive {
   .grid__wrapper {
     /* extend grid elements to the right */
@@ -124,7 +131,10 @@
 }
 
 .grid__item {
+  @include border-radius(10px); // apply the mixin
   margin-bottom: 2em;
+  margin-left: 3px;
+  background-color: #e9d9ff;
 
   @include breakpoint($small) {
     float: left;
@@ -142,9 +152,7 @@
   }
 
   @include breakpoint($medium) {
-    margin-left: 0; /* override margin*/
-    margin-right: 0; /* override margin*/
-    width: span(3 of 12);
+    width: span(5 of 10);
 
     &:nth-child(2n + 1) {
       clear: none;
@@ -177,11 +185,13 @@
 
   .archive__item-title {
     margin-top: 0.5em;
+    margin-left: 6px;
     font-size: $type-size-5;
   }
 
   .archive__item-excerpt {
     display: none;
+    margin-left: 6px;
 
     @include breakpoint($medium) {
       display: block;
@@ -195,7 +205,7 @@
     }
 
     @include breakpoint($medium) {
-      max-height: 120px;
+      max-height: 200px;
     }
   }
 }
