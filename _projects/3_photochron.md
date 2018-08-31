@@ -2,7 +2,7 @@
 title: "PhotoChron"
 excerpt: "Desktop app for renaming photos based on date/time taken."
 header:
-  teaser: /assets/images/music_box.png
+  teaser: /assets/images/photochron.png
 author_profile: true
 classes: wide
 ---
