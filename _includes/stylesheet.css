@@ -1,0 +1,393 @@
+/* -------- CONTAINER -------- */
+
+#musicbox {
+	height: 600px;
+	overflow:auto;
+	text-align:center;
+	position:relative;
+	border-radius: 10px;
+	border-bottom: 2px solid #444444;
+	border-left: 2px solid #444444;
+	border-right: 2px solid #444444;
+}
+
+/* -------- GENERAL BUTTON FORMATTING -------- */
+
+#button_row {
+	bottom:10px;
+	position: absolute;
+	right:0;
+	left: 0;
+	margin:auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#button_row > div {
+	position: relative;
+	width: 90px;
+}
+.button {
+	display: inline-block;
+	height:90px;
+	padding:0px 5px 0px 10px;
+	cursor: pointer;
+}
+
+.button:hover {
+	opacity: 0.75;
+}
+
+
+/* ---- PLAY/STOP/LOOP/CLEAR BUTTONS ---- */
+
+#clear {
+	background: url("img/clear.png") no-repeat center;
+	background-size: contain;
+	position: relative;
+}
+
+#clear:hover {
+	background: url("img/clear_hover.png") no-repeat center;
+	background-size: contain;
+}
+
+#tostart {
+	background: url("img/tostart.png") no-repeat center;
+	background-size: contain;
+	position: relative;
+}
+
+#loop {
+	background: url("img/loop.png") no-repeat center;
+	background-size: contain;
+}
+
+#playstop {
+	background: url("img/play.png") no-repeat center;
+	background-size: contain;
+}
+
+
+/* ---- ADDING/REMOVING MEASURES ---- */
+
+#addmeasure {
+	background: url("img/add_measure.png") no-repeat center;
+	background-size: contain;
+	cursor: pointer;
+}
+
+#addmeasure:hover {
+	background: url("img/add_measure_hover.png") no-repeat center;
+	background-size: contain;
+}
+
+#deletemeasure {
+	background: url("img/del_measure.png") no-repeat center;
+	cursor: pointer;
+	background-size: contain;
+}
+
+#deletemeasure:hover {
+	background: url("img/del_measure_hover.png") no-repeat center;
+	background-size: contain;
+}
+
+
+/* ---- CHANGING KEY SIGNATURE ---- */
+
+#keychange {
+	background: url("img/key.png") no-repeat center;
+	background-size: contain;
+}
+
+#keychange:hover {
+	background: url("img/key_hover.png") no-repeat center;
+	background-size: contain;
+}
+
+.key_choice > p {
+	font-size: 14px;
+	font-family: "Verdana", sans-serif;
+}
+
+#key_menu {
+	position: absolute;
+	display: none;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -70%);
+	z-index: 2;
+	background-color: lightskyblue;
+	overflow: auto;
+}
+
+table#key_choice_table {
+	padding: 20px 30px 0px 30px;
+}
+
+.key_choice_cell {
+	line-height: 1em;
+	min-width: 30px;
+	font-size: medium;
+}
+
+.key_choice_cell:hover {
+	cursor: pointer;
+	background-color: lightblue;
+}
+
+.no_key {
+	display: inline-block;
+	margin: auto;
+	font-size: medium;
+	padding: 5px 10px 5px 10px;;
+}
+
+
+/* ---- ADDING TRACKS ---- */
+
+#addtrack {
+	position: relative;
+	background: url("img/add_track.png") no-repeat center;
+	cursor: pointer;
+	background-size: contain;
+}
+
+#addtrack:hover {
+	background: url("img/add_track_hover.png") no-repeat center;
+	background-size: contain;
+}
+
+
+/* ---- CHANGING TEMPO ---- */
+
+#tempo {
+	position: absolute;
+	top: 0;
+	bottom:0;
+	margin: auto;
+	left: 35%;
+	background-color : lightgray;
+	width: 180px;
+	border:2px solid #456879;
+	border-radius:30px;
+	height: 10%;
+	color: black;
+	font: 20px bold Verdana, sans-serif;
+	text-align: center;
+}
+
+#tempo_button {
+	display: inline-block;
+	position: relative;
+	height:90px;
+	width: 300px;
+	cursor: pointer;
+	background: url("img/tempo.png") no-repeat center;
+	background-size: contain;
+}
+
+#tempo_button:hover {
+	opacity:0.75;
+}
+
+
+/* ---- BUTTONS INSIDE TRACKS ---- */
+
+.track_btns {
+	display:inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: auto;
+	width: auto;
+}
+
+.track_btns > div {
+	height: 90px;
+	width: 90px;
+	margin: 5px 0;
+	background-size: contain;
+}
+
+.deletetrack {
+	background: url("img/del_track.png") no-repeat center;
+	cursor: pointer;
+	background-size: contain;
+}
+
+.deletetrack:hover {
+	opacity: 0.7;
+}
+
+.inst {
+	background: url("img/ico/inst_bass.png") no-repeat center;
+	cursor: pointer;
+	background-size: contain;
+}
+
+.inst:hover {
+	opacity: 0.7;
+}
+
+.inst_button {
+	height: 100px;
+	width: 100px;
+	top:0;
+	bottom:0;
+	margin: auto;
+	display:inline-block;
+	cursor: pointer;
+}
+
+#inst_menu {
+	position: fixed;
+	bottom:10px;
+	left: -600px;
+	width: auto;
+	height:auto;
+	background-color: white;
+	border: solid 2px black;
+	border-radius: 20px;
+	z-index: 1;
+}
+
+
+/* --------- TRACK INTERFACE --------- */
+
+
+.track_container {
+	position: relative;
+    top:0;
+    bottom: 15%;
+    left: 0;
+	height: 85%;
+	width: 100%;
+	background-color: inherit;
+	font-size:0;
+	text-align: left;
+}
+
+.track {
+	white-space:nowrap;
+	display:inline-block;
+	position: relative;
+	margin: 0px 0px 8px;
+	max-height: 100%;
+	width: 100%;
+	font-size:0;
+	border-bottom: 2px solid #444444;
+	border-top: 2px solid #444444;
+	overflow-y: auto;
+}
+
+.col {
+	vertical-align: top;
+	white-space: normal;
+	position: relative;
+	display:inline-block;
+	height:100%;
+	width: 30px;
+}
+
+.labels {
+	vertical-align: top;
+	white-space: normal;
+	position: relative;
+	display:inline-block;
+	height:100%;
+	width: 70px;
+}
+
+.note {
+	position: relative;
+	display:inline-block;
+	height: 6.67%;
+	height: 20px;
+	width: 100%;
+	border-radius: 5%;
+	border-left: solid 1px gray;
+	border-top: solid 1px gray;
+	background-color: gainsboro;
+}
+
+.note:hover {
+	opacity:0.5;
+}
+
+.black_key {
+	background-color: silver;
+}
+
+.label {
+	background-color: white;
+	color: black;
+	font-size: 13px;
+	font-family: Georgia, sans-serif;
+	font-weight: bold;
+	line-height: 30px;
+}
+.label.black_key {
+	background-color: darkslategray;
+	color: white;
+}
+
+.active {
+	background-color: #4b86b4;
+}
+
+
+
+
+/*--------- INSTRUMENT ICONS ---------*/
+
+.bass_ico {
+	background: url("img/ico/bass.png") no-repeat center;
+	background-size: contain;
+}
+
+.violin_ico {
+	background: url("img/ico/violin.png") no-repeat center;
+	background-size: contain;
+}
+
+.piano_ico {
+	background: url("img/ico/piano.png") no-repeat center;
+	background-size: contain;
+}
+
+.synth_ico {
+	background: url("img/ico/synth.png") no-repeat center;
+	background-size: contain;
+}
+
+.drums_ico {
+	background: url("img/ico/drums.png") no-repeat center;
+	background-size: contain;
+}
+
+.bass_ico:hover {
+	background: url("img/ico/bass_hover.png") no-repeat center;
+	background-size: contain;
+}
+
+.violin_ico:hover {
+	background: url("img/ico/violin_hover.png") no-repeat center;
+	background-size: contain;
+}
+
+.piano_ico:hover {
+	background: url("img/ico/piano_hover.png") no-repeat center;
+	background-size: contain;
+}
+
+.synth_ico:hover {
+	background: url("img/ico/synth_hover.png") no-repeat center;
+	background-size: contain;
+}
+
+.drums_ico:hover {
+	background: url("img/ico/drums_hover.png") no-repeat center;
+	background-size: contain;
+}

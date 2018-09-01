@@ -1,0 +1,119 @@
+<div id="musicbox">
+		<div align="center" id="button_row">
+			<div id="keychange" class="button"></div>
+			<div id="loop" class="button"></div>
+			<div id="clear" class="button"></div>
+			<div id="tostart" class="button"></div>
+			<div id="playstop" class="stopped button"></div>
+			<div id="addtrack" class="button"></div>
+			<div id="deletemeasure" class="button"></div>
+			<div id="addmeasure" class="button"></div>
+			<div id="tempo_button" class="button">
+				<input type="text" id="tempo">
+			</div>
+		</div>
+		<div id="inst_menu">
+			<div class="inst_button bass_ico"></div>
+			<div class="inst_button violin_ico"></div>
+			<div class="inst_button piano_ico"></div>
+			<div class="inst_button synth_ico"></div>
+			<div class="inst_button drums_ico"></div>
+		</div>
+		<div class="track_container">
+			<div class="track bass">
+				<div class='track_btns'>
+					<div class="inst trackbutton"></div>
+					<div class="deletetrack trackbutton"></div>
+				</div>
+				<div class="labels">
+					<div class="c5 c 5 note label">C</div>
+					<div class="b4 b 4 note label">B</div>
+					<div class="as4 as 4 note label black_key">B&#9837;</div>
+					<div class="a4 a 4 note label">A</div>
+					<div class="gs4 gs 4 note label black_key">A&#9837;</div>
+					<div class="g4 g 4 note label">G</div>
+					<div class="fs4 fs 4 note label black_key">F&#9839;</div>
+					<div class="f4 f 4 note label">F</div>
+					<div class="e4 e 4 note label">E</div>
+					<div class="ds4 ds 4 note label black_key">E&#9837;</div>
+					<div class="d4 d 4 note label">D</div>
+					<div class="cs4 cs 4 note label black_key">D&#9837;</div>
+					<div class="c4 c 4 note label">C</div>
+					<div class="b3 b 3 note label">B</div>
+					<div class="as3 as 3 note label black_key">B&#9837;</div>
+					<div class="a3 a 3 note label">A</div>
+					<div class="gs3 gs 3 note label black_key">A&#9837;</div>
+					<div class="g3 g 3 note label">G</div>
+					<div class="fs3 fs 3 note label black_key">F&#9839;</div>
+					<div class="f3 f 3 note label">F</div>
+					<div class="e3 e 3 note label">E</div>
+					<div class="ds3 ds 3 note label black_key">E&#9837;</div>
+					<div class="d3 d 3 note label">D</div>
+					<div class="cs3 cs 3 note label black_key">D&#9837;</div>
+					<div class="c3 c 3 note label">C</div>
+				</div>
+				<div class="col">
+					<div class="c5 c 5 note playable"></div>
+					<div class="b4 b 4 note playable"></div>
+					<div class="as4 as 4 note playable black_key"></div>
+					<div class="a4 a 4 note playable"></div>
+					<div class="gs4 gs 4 note playable black_key"></div>
+					<div class="g4 g 4 note playable"></div>
+					<div class="fs4 fs 4 note playable black_key"></div>
+					<div class="f4 f 4 note playable"></div>
+					<div class="e4 e 4 note playable"></div>
+					<div class="ds4 ds 4 note playable black_key"></div>
+					<div class="d4 d 4 note playable"></div>
+					<div class="cs4 cs 4 note playable black_key"></div>
+					<div class="c4 c 4 note playable"></div>
+					<div class="b3 b 3 note playable"></div>
+					<div class="as3 as 3 note playable black_key"></div>
+					<div class="a3 a 3 note playable"></div>
+					<div class="gs3 gs 3 note playable black_key"></div>
+					<div class="g3 g 3 note playable"></div>
+					<div class="fs3 fs 3 note playable black_key"></div>
+					<div class="f3 f 3 note playable"></div>
+					<div class="e3 e 3 note playable"></div>
+					<div class="ds3 ds 3 note playable black_key"></div>
+					<div class="d3 d 3 note playable"></div>
+					<div class="cs3 cs 3 note playable black_key"></div>
+					<div class="c3 c 3 note playable"></div>
+				</div>
+			</div>
+		</div>
+		<div id="key_menu">
+			<table id="key_choice_table">
+				<tr>
+					<td class="key_choice_header">Major Key:</td>
+					<td class="key_choice_cell c"><p align="center">C</p></td>
+					<td class="key_choice_cell cs"><p align="center">D&#9837;</p></td>
+					<td class="key_choice_cell d"><p align="center">D</p></td>
+					<td class="key_choice_cell ds"><p align="center">E&#9837;</p></td>
+					<td class="key_choice_cell e"><p align="center">E</p></td>
+					<td class="key_choice_cell f"><p align="center">F</p></td>
+					<td class="key_choice_cell fs"><p align="center">F&#9839;</p></td>
+					<td class="key_choice_cell g"><p align="center">G</p></td>
+					<td class="key_choice_cell gs"><p align="center">A&#9837;</p></td>
+					<td class="key_choice_cell a"><p align="center">A</p></td>
+					<td class="key_choice_cell as"><p align="center">B&#9837;</p></td>
+					<td class="key_choice_cell b"><p align="center">B</p></td>
+				</tr>
+				<tr>
+					<td class="key_choice_header">Minor Key:</td>
+					<td class="key_choice_cell ds"><p align="center">C</p></td>
+					<td class="key_choice_cell e"><p align="center">D&#9837;</p></td>
+					<td class="key_choice_cell f"><p align="center">D</p></td>
+					<td class="key_choice_cell fs"><p align="center">E&#9837;</p></td>
+					<td class="key_choice_cell g"><p align="center">E</p></td>
+					<td class="key_choice_cell gs"><p align="center">F</p></td>
+					<td class="key_choice_cell a"><p align="center">F&#9839;</p></td>
+					<td class="key_choice_cell as"><p align="center">G</p></td>
+					<td class="key_choice_cell b"><p align="center">A&#9837;</p></td>
+					<td class="key_choice_cell c"><p align="center">A</p></td>
+					<td class="key_choice_cell cs"><p align="center">B&#9837;</p></td>
+					<td class="key_choice_cell d"><p align="center">B</p></td>
+				</tr>
+			</table>
+			<div class="key_choice_cell none no_key"><p align="center">None (Show All Notes)</p></div>
+		</div>
+	</div>

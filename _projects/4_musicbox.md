@@ -6,7 +6,14 @@ header:
 author_profile: true
 classes: wide
 ---
-
-A Javascript app for making music. See the [source code](https://github.com/timpel/musicbox) or [try it out](http://timwp.com/musicbox2/) if you like.
-
-You can loop playback, add tracks, add measures, change instruments, change key signatures, and save your creations. It's built with JavaScipt, particularly [Howler.js](https://github.com/goldfire/howler.js/).
+{% include head/musicbox.html %}
+<style>
+  {% include stylesheet.css %}
+</style>
+A Javascript app for making music. You can loop playback, add tracks, add measures and change instruments & key signature. It's built with JavaScipt, particularly [Howler.js](https://github.com/goldfire/howler.js/). See the [source code](https://github.com/timpel/musicbox) or try it out if you'd like:
+{% include musicbox.html %}
+<script>
+  {% include howler.js %}
+  {% include sounds.min.js %}
+  {% include script.min.js %}
+</script>
